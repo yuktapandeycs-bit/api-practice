@@ -14,13 +14,15 @@ try:
             results.append({
                 "name": item["name"],
                 "email": item["email"],
-                "company": item["company"]
+                "company": item["company"]["name"]
             })
-        else:
-            print("No user found")
-    print(results)
+    if len(results) == 0:
+        print("No user found")    
+    else:
+        print(results)
     with open("results.json", "w") as file:
         json.dump(results, file)
+    print("Git practice")
 
 
 except requests.exceptions.RequestException as error:
