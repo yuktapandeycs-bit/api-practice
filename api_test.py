@@ -22,7 +22,7 @@ try:
         print(results)
     with open("results.json", "w") as file:
         json.dump(results, file)
-    print("Git practice")
+    print("Git workflow practice")
 
 
 except requests.exceptions.RequestException as error:
