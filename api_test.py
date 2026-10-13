@@ -23,6 +23,7 @@ try:
     with open("results.json", "w") as file:
         json.dump(results, file)
     print("Git workflow practice")
+    print("Feature branch test")
 
 
 except requests.exceptions.RequestException as error:
